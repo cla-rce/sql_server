@@ -76,6 +76,10 @@ INSTALLSHAREDWOWDIR="C:\Program Files (x86)\Microsoft SQL Server"
 
 INSTANCEDIR="<%= node['sql_server']['instance_dir'] %>"
 
+; Specify the SQL data directory
+
+INSTALLSQLDATADIR="<%= node['sql_server']['data_dir'] %>"
+
 ; Specify that SQL Server feature usage data can be collected and sent to Microsoft. Specify 1 or True to enable and 0 or False to disable this feature.
 
 SQMREPORTING="False"
@@ -143,10 +147,6 @@ SQLSVCSTARTUPTYPE="Automatic"
 ; Level to enable FILESTREAM feature at (0, 1, 2 or 3).
 
 FILESTREAMLEVEL="0"
-
-; Set to "1" to enable RANU for SQL Server Express.
-
-ENABLERANU="True"
 
 ; Specifies a Windows collation or an SQL collation to use for the Database Engine.
 

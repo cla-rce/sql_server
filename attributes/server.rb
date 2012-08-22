@@ -23,6 +23,7 @@ default['sql_server']['port']           = 1433
 
 default['sql_server']['instance_name']  = 'SQLEXPRESS'
 default['sql_server']['instance_dir']   = 'C:\Program Files\Microsoft SQL Server'
+default['sql_server']['data_dir'] = ''
 
 if kernel['machine'] =~ /x86_64/
 
