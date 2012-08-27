@@ -78,7 +78,9 @@ INSTANCEDIR="<%= node['sql_server']['instance_dir'] %>"
 
 ; Specify the SQL data directory
 
+<% if node['sql_server']['data_dir'] %>
 INSTALLSQLDATADIR="<%= node['sql_server']['data_dir'] %>"
+<% end %>
 
 ; Specify that SQL Server feature usage data can be collected and sent to Microsoft. Specify 1 or True to enable and 0 or False to disable this feature.
 
