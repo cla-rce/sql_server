@@ -26,7 +26,7 @@ ACTION="Install"
 
 ; Specifies features to install, uninstall, or upgrade. The list of top-level features include SQL, AS, RS, IS, and Tools. The SQL feature will install the database engine, replication, and full-text. The Tools feature will install Management Tools, Books online, Business Intelligence Development Studio, and other shared components.
 
-FEATURES=SQLENGINE,SSMS
+FEATURES=SQLENGINE,ADV_SSMS
 
 ; Displays the command line parameters usage
 
@@ -161,7 +161,7 @@ SQLSVCACCOUNT="NT AUTHORITY\NETWORK SERVICE"
 ; Windows account(s) to provision as SQL Server system administrators.
 
 ;SQLSYSADMINACCOUNTS="IP-0A7A5B97\Administrator"
-SQLSYSADMINACCOUNTS="Administrator"
+SQLSYSADMINACCOUNTS="BUILTIN\Administrators"
 
 ; Specify 0 to disable or 1 to enable the TCP/IP protocol.
 
